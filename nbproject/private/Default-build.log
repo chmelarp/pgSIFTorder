@@ -1,0 +1,7 @@
+mkdir -p build/
+gcc    -c -g -I/usr/include/octave/ -I\'pg_config\ --includedir-server\' -I\'pg_config\ --includedir\' -I/usr/include/postgresql/8.3/server -I/usr/include/postgresql -fPIC -o build//pgsiftorder.o pgsiftorder.c 
+pgsiftorder.c:19:65: fatal error: postgres.h: No such file or directory
+ #include "postgres.h"           // general Postgres declarations
+                                                                 ^
+compilation terminated.
+make: *** [build//pgsiftorder.o] Error 1
